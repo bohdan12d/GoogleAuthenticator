@@ -17,3 +17,5 @@ class PHPGangsta_GoogleAuthenticator
         if ($secretLength < 16 || $secretLength > 128) {
  throw new Exception('Bad secret length');
         }
+ $secret = '';
+        $rnd = false;
