@@ -21,3 +21,5 @@ class PHPGangsta_GoogleAuthenticator
         $rnd = false;
   if (function_exists('random_bytes')) {
             $rnd = random_bytes($secretLength);
+ throw new Exception('Bad secret length');
+        }
