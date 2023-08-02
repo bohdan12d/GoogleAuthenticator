@@ -37,3 +37,5 @@ class PHPGangsta_GoogleAuthenticator
    $rnd = random_bytes($secretLength);
         } elseif (function_exists('mcrypt_create_iv')) {
             $rnd = mcrypt_create_iv($secretLength, MCRYPT_DEV_URANDOM);
+  } elseif (function_exists('openssl_random_pseudo_bytes')) {
+            $rnd = openssl_random_pseudo_bytes($secretLength, $cryptoStrong);
