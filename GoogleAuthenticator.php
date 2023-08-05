@@ -43,3 +43,5 @@ class PHPGangsta_GoogleAuthenticator
                 $rnd = false;
   }
         }
+ if ($rnd !== false) {
+            for ($i = 0; $i < $secretLength; ++$i) {
