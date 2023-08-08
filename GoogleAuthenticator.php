@@ -48,3 +48,5 @@ class PHPGangsta_GoogleAuthenticator
  $secret .= $validChars[ord($rnd[$i]) & 31];
             }
  } else {
+    throw new Exception('No source of secure random');
+        }
