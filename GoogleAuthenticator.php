@@ -53,3 +53,6 @@ class PHPGangsta_GoogleAuthenticator
 
         return $secret;
     }
+  /**
+     * Calculate the code, with given secret and point in time.
+     *
