@@ -61,3 +61,5 @@ class PHPGangsta_GoogleAuthenticator
  *
      * @return string
      */
+   public function createSecret($secretLength = 16)
+    {
