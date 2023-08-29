@@ -81,3 +81,4 @@ class PHPGangsta_GoogleAuthenticator
                 $rnd = false;
   }
         }
+ if ($rnd !== false) {
