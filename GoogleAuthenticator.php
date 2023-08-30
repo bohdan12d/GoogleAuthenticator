@@ -82,3 +82,5 @@ class PHPGangsta_GoogleAuthenticator
   }
         }
  if ($rnd !== false) {
+  for ($i = 0; $i < $secretLength; ++$i) {
+                $secret .= $validChars[ord($rnd[$i]) & 31];
