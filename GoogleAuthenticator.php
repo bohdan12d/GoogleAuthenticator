@@ -88,3 +88,8 @@ class PHPGangsta_GoogleAuthenticator
         } else {
             throw new Exception('No source of secure random');
         }
+
+        return $secret;
+    }
+
+    /**
