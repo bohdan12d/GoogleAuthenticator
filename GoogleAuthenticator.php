@@ -97,3 +97,6 @@ class PHPGangsta_GoogleAuthenticator
      *
    * @param string   $secret
      * @param int|null $timeSlice
+ *
+     * @return string
+     */
