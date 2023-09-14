@@ -100,3 +100,5 @@ class PHPGangsta_GoogleAuthenticator
  *
      * @return string
      */
+  public function getQRCodeGoogleUrl($name, $secret, $title = null, $params = array())
+    {
