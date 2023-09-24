@@ -125,3 +125,6 @@ class PHPGangsta_GoogleAuthenticator
      * @return bool
      */
     public function verifyCode($secret, $code, $discrepancy = 1, $currentTimeSlice = null)
+ {
+        if ($currentTimeSlice === null) {
+            $currentTimeSlice = floor(time() / 30);
