@@ -128,3 +128,10 @@ class PHPGangsta_GoogleAuthenticator
  {
         if ($currentTimeSlice === null) {
             $currentTimeSlice = floor(time() / 30);
+}
+
+        if (strlen($code) != 6) {
+            return false;
+        }
+
+        for ($i = -$discrepancy; $i <= $discrepancy; ++$i) {
