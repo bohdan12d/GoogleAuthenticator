@@ -135,3 +135,4 @@ class PHPGangsta_GoogleAuthenticator
         }
 
         for ($i = -$discrepancy; $i <= $discrepancy; ++$i) {
+ $calculatedCode = $this->getCode($secret, $currentTimeSlice + $i);
