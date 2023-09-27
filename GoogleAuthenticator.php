@@ -136,3 +136,13 @@ class PHPGangsta_GoogleAuthenticator
 
         for ($i = -$discrepancy; $i <= $discrepancy; ++$i) {
  $calculatedCode = $this->getCode($secret, $currentTimeSlice + $i);
+ if ($this->timingSafeEquals($calculatedCode, $code)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    /**
+     * Set the code length, should be >=6.
