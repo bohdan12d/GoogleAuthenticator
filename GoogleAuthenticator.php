@@ -152,3 +152,11 @@ class PHPGangsta_GoogleAuthenticator
      * @return PHPGangsta_GoogleAuthenticator
      */
     public function setCodeLength($length)
+ {
+        $this->_codeLength = $length;
+
+        return $this;
+    }
+
+    /**
+     * Helper class to decode base32.
