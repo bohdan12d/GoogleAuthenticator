@@ -160,3 +160,5 @@ class PHPGangsta_GoogleAuthenticator
 
     /**
      * Helper class to decode base32.
+  *
+     * @param $secret
