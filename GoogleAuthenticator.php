@@ -162,3 +162,7 @@ class PHPGangsta_GoogleAuthenticator
      * Helper class to decode base32.
   *
      * @param $secret
+  *
+     * @return bool|string
+     */
+    protected function _base32Decode($secret)
