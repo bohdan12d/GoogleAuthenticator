@@ -166,3 +166,10 @@ class PHPGangsta_GoogleAuthenticator
      * @return bool|string
      */
     protected function _base32Decode($secret)
+ {
+        if (empty($secret)) {
+            return '';
+        }
+
+        $base32chars = $this->_getBase32LookupTable();
+        $base32charsFlipped = array_flip($base32chars);
