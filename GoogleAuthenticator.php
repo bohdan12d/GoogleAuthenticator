@@ -173,3 +173,5 @@ class PHPGangsta_GoogleAuthenticator
 
         $base32chars = $this->_getBase32LookupTable();
         $base32charsFlipped = array_flip($base32chars);
+
+        $paddingCharCount = substr_count($secret, $base32chars[32]);
