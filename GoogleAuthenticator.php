@@ -177,3 +177,7 @@ class PHPGangsta_GoogleAuthenticator
         $paddingCharCount = substr_count($secret, $base32chars[32]);
    $allowedValues = array(6, 4, 3, 1, 0);
   if (!in_array($paddingCharCount, $allowedValues)) {
+   return false;
+        }
+        for ($i = 0; $i < 4; ++$i) {
+            if ($paddingCharCount == $allowedValues[$i] &&
