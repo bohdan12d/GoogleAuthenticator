@@ -181,3 +181,8 @@ class PHPGangsta_GoogleAuthenticator
         }
         for ($i = 0; $i < 4; ++$i) {
             if ($paddingCharCount == $allowedValues[$i] &&
+        substr($secret, -($allowedValues[$i])) != str_repeat($base32chars[32], $allowedValues[$i])) {
+                return false;
+            }
+        }
+        $secret = str_replace('=', '', $secret);
