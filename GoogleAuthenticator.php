@@ -186,3 +186,6 @@ class PHPGangsta_GoogleAuthenticator
             }
         }
         $secret = str_replace('=', '', $secret);
+ $secret = str_split($secret);
+        $binaryString = '';
+        for ($i = 0; $i < count($secret); $i = $i + 8) {
