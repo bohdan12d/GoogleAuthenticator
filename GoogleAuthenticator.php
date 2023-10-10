@@ -189,3 +189,9 @@ class PHPGangsta_GoogleAuthenticator
  $secret = str_split($secret);
         $binaryString = '';
         for ($i = 0; $i < count($secret); $i = $i + 8) {
+  $x = '';
+            if (!in_array($secret[$i], $base32chars)) {
+                return false;
+            }
+            for ($j = 0; $j < 8; ++$j) {
+                $x .= str_pad(base_convert(@$base32charsFlipped[@$secret[$i + $j]], 10, 2), 5, '0', STR_PAD_LEFT);
