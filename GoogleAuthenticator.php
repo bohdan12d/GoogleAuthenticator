@@ -207,3 +207,7 @@ class PHPGangsta_GoogleAuthenticator
 
     /**
      * Get array with all 32 characters for decoding from/encoding to base32.
+ *
+     * @return array
+     */
+    protected function _getBase32LookupTable()
