@@ -211,3 +211,6 @@ class PHPGangsta_GoogleAuthenticator
      * @return array
      */
     protected function _getBase32LookupTable()
+  {
+        return array(
+            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', //  7
