@@ -214,3 +214,4 @@ class PHPGangsta_GoogleAuthenticator
   {
         return array(
             'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', //  7
+ 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', // 15
