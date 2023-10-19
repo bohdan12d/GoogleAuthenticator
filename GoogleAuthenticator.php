@@ -217,3 +217,9 @@ class PHPGangsta_GoogleAuthenticator
  'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', // 15
 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', // 23
   'Y', 'Z', '2', '3', '4', '5', '6', '7', // 31
+  '=',  // padding char
+        );
+    }
+
+    /**
+     * A timing safe equals comparison
