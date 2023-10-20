@@ -223,3 +223,6 @@ class PHPGangsta_GoogleAuthenticator
 
     /**
      * A timing safe equals comparison
+   * more info here: http://blog.ircmaxell.com/2014/11/its-all-about-time.html.
+     *
+     * @param string $safeString The internal (safe) value to be checked
