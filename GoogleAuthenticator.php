@@ -226,3 +226,6 @@ class PHPGangsta_GoogleAuthenticator
    * more info here: http://blog.ircmaxell.com/2014/11/its-all-about-time.html.
      *
      * @param string $safeString The internal (safe) value to be checked
+ * @param string $userString The user submitted (unsafe) value
+     *
+     * @return bool True if the two strings are identical
