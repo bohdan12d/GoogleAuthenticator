@@ -229,3 +229,5 @@ class PHPGangsta_GoogleAuthenticator
  * @param string $userString The user submitted (unsafe) value
      *
      * @return bool True if the two strings are identical
+  */
+    private function timingSafeEquals($safeString, $userString)
