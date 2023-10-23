@@ -231,3 +231,5 @@ class PHPGangsta_GoogleAuthenticator
      * @return bool True if the two strings are identical
   */
     private function timingSafeEquals($safeString, $userString)
+ {
+        if (function_exists('hash_equals')) {
