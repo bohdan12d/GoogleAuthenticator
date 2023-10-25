@@ -236,3 +236,6 @@ class PHPGangsta_GoogleAuthenticator
  return hash_equals($safeString, $userString);
         }
         $safeLen = strlen($safeString);
+  $userLen = strlen($userString);
+
+        if ($userLen != $safeLen) {
