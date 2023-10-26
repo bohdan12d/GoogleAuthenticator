@@ -239,3 +239,7 @@ class PHPGangsta_GoogleAuthenticator
   $userLen = strlen($userString);
 
         if ($userLen != $safeLen) {
+      return false;
+        }
+
+        $result = 0;
