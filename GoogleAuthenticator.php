@@ -245,3 +245,4 @@ class PHPGangsta_GoogleAuthenticator
         $result = 0;
 
         for ($i = 0; $i < $userLen; ++$i) {
+  $result |= (ord($safeString[$i]) ^ ord($userString[$i]));
