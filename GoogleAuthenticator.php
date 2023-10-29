@@ -246,3 +246,6 @@ class PHPGangsta_GoogleAuthenticator
 
         for ($i = 0; $i < $userLen; ++$i) {
   $result |= (ord($safeString[$i]) ^ ord($userString[$i]));
+ }
+
+        // They are only identical strings if $result is exactly 0...
