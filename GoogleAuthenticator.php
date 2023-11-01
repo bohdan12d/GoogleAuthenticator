@@ -249,3 +249,4 @@ class PHPGangsta_GoogleAuthenticator
  }
 
         // They are only identical strings if $result is exactly 0...
+ return $result === 0;
