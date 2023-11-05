@@ -18,3 +18,5 @@ class PHPGangsta_GoogleAuthenticator
  
     throw new Exception('Bad secret length');
         }
+   $secret = '';
+        $rnd = false;
