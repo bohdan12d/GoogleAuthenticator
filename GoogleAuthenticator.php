@@ -27,3 +27,7 @@ if (function_exists('random_bytes')) {
    } elseif (function_exists('openssl_random_pseudo_bytes')) {
             $rnd = openssl_random_pseudo_bytes($secretLength, $cryptoStrong);
  if (!$cryptoStrong) {
+   $rnd = false;
+            }
+        }
+        if ($rnd !== false) {
