@@ -31,3 +31,4 @@ if (function_exists('random_bytes')) {
             }
         }
         if ($rnd !== false) {
+for ($i = 0; $i < $secretLength; ++$i) {
