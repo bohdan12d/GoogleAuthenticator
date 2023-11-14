@@ -35,3 +35,11 @@ for ($i = 0; $i < $secretLength; ++$i) {
    $secret .= $validChars[ord($rnd[$i]) & 31];
             }
         } else {
+     throw new Exception('No source of secure random');
+        }
+
+        return $secret;
+    }
+
+    /**
+     * Calculate the code, with given secret and point in time.
