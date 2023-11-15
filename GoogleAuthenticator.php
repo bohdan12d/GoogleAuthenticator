@@ -43,3 +43,6 @@ for ($i = 0; $i < $secretLength; ++$i) {
 
     /**
      * Calculate the code, with given secret and point in time.
+  *
+     * @param string   $secret
+     * @param int|null $timeSlice
