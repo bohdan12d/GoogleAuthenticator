@@ -46,3 +46,7 @@ for ($i = 0; $i < $secretLength; ++$i) {
   *
      * @param string   $secret
      * @param int|null $timeSlice
+ *
+     * @return string
+     */
+    public function getCode($secret, $timeSlice = null)
