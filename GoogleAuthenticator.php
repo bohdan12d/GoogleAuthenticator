@@ -50,3 +50,5 @@ for ($i = 0; $i < $secretLength; ++$i) {
      * @return string
      */
     public function getCode($secret, $timeSlice = null)
+  {
+        if ($timeSlice === null) {
