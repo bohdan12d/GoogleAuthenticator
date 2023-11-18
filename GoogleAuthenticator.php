@@ -52,3 +52,7 @@ for ($i = 0; $i < $secretLength; ++$i) {
     public function getCode($secret, $timeSlice = null)
   {
         if ($timeSlice === null) {
+    $timeSlice = floor(time() / 30);
+        }
+
+        $secretkey = $this->_base32Decode($secret);
