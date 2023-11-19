@@ -56,3 +56,6 @@ for ($i = 0; $i < $secretLength; ++$i) {
         }
 
         $secretkey = $this->_base32Decode($secret);
+
+        // Pack time into binary string
+        $time = chr(0).chr(0).chr(0).chr(0).pack('N*', $timeSlice);
