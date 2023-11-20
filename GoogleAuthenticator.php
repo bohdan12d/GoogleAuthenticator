@@ -59,3 +59,5 @@ for ($i = 0; $i < $secretLength; ++$i) {
 
         // Pack time into binary string
         $time = chr(0).chr(0).chr(0).chr(0).pack('N*', $timeSlice);
+ // Hash it with users secret key
+        $hm = hash_hmac('SHA1', $time, $secretkey, true);
