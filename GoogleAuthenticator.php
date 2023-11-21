@@ -61,3 +61,5 @@ for ($i = 0; $i < $secretLength; ++$i) {
         $time = chr(0).chr(0).chr(0).chr(0).pack('N*', $timeSlice);
  // Hash it with users secret key
         $hm = hash_hmac('SHA1', $time, $secretkey, true);
+  // Use last nipple of result as index/offset
+        $offset = ord(substr($hm, -1)) & 0x0F;
