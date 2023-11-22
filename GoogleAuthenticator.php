@@ -63,3 +63,5 @@ for ($i = 0; $i < $secretLength; ++$i) {
         $hm = hash_hmac('SHA1', $time, $secretkey, true);
   // Use last nipple of result as index/offset
         $offset = ord(substr($hm, -1)) & 0x0F;
+ // grab 4 bytes of the result
+        $hashpart = substr($hm, $offset, 4);
