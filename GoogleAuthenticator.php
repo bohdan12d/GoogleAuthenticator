@@ -65,3 +65,5 @@ for ($i = 0; $i < $secretLength; ++$i) {
         $offset = ord(substr($hm, -1)) & 0x0F;
  // grab 4 bytes of the result
         $hashpart = substr($hm, $offset, 4);
+
+        // Unpak binary value
