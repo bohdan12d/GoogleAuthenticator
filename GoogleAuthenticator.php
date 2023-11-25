@@ -67,3 +67,5 @@ for ($i = 0; $i < $secretLength; ++$i) {
         $hashpart = substr($hm, $offset, 4);
 
         // Unpak binary value
+$value = unpack('N', $hashpart);
+        $value = $value[1];
