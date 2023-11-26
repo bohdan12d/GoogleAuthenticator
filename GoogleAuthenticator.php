@@ -69,3 +69,4 @@ for ($i = 0; $i < $secretLength; ++$i) {
         // Unpak binary value
 $value = unpack('N', $hashpart);
         $value = $value[1];
+ // Only 32 bits
