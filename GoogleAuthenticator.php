@@ -70,3 +70,6 @@ for ($i = 0; $i < $secretLength; ++$i) {
 $value = unpack('N', $hashpart);
         $value = $value[1];
  // Only 32 bits
+  $value = $value & 0x7FFFFFFF;
+
+        $modulo = pow(10, $this->_codeLength);
