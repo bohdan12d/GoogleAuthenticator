@@ -79,3 +79,5 @@ $value = unpack('N', $hashpart);
 
     /**
      * Get QR-Code URL for image, from google charts.
+*
+     * @param string $name
