@@ -82,3 +82,9 @@ $value = unpack('N', $hashpart);
 *
      * @param string $name
  * @param string $secret
+ * @param string $title
+     * @param array  $params
+     *
+     * @return string
+     */
+    public function getQRCodeGoogleUrl($name, $secret, $title = null, $params = array())
