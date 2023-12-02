@@ -88,3 +88,6 @@ $value = unpack('N', $hashpart);
      * @return string
      */
     public function getQRCodeGoogleUrl($name, $secret, $title = null, $params = array())
+   {
+        $width = !empty($params['width']) && (int) $params['width'] > 0 ? (int) $params['width'] : 200;
+        $height = !empty($params['height']) && (int) $params['height'] > 0 ? (int) $params['height'] : 200;
