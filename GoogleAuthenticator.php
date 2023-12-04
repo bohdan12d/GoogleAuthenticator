@@ -94,3 +94,5 @@ $value = unpack('N', $hashpart);
  $level = !empty($params['level']) && array_search($params['level'], array('L', 'M', 'Q', 'H')) !== false ? $params['level'] : 'M';
 
         $urlencoded = urlencode('otpauth://totp/'.$name.'?secret='.$secret.'');
+if (isset($title)) {
+            $urlencoded .= urlencode('&issuer='.urlencode($title));
