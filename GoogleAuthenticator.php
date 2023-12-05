@@ -96,3 +96,10 @@ $value = unpack('N', $hashpart);
         $urlencoded = urlencode('otpauth://totp/'.$name.'?secret='.$secret.'');
 if (isset($title)) {
             $urlencoded .= urlencode('&issuer='.urlencode($title));
+  }
+
+        return "https://api.qrserver.com/v1/create-qr-code/?data=$urlencoded&size=${width}x${height}&ecc=$level";
+    }
+
+    /**
+     * Check if the code is correct. This will accept codes starting from $discrepancy*30sec ago to $discrepancy*30sec from now.
