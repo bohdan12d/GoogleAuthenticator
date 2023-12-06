@@ -103,3 +103,7 @@ if (isset($title)) {
 
     /**
      * Check if the code is correct. This will accept codes starting from $discrepancy*30sec ago to $discrepancy*30sec from now.
+  *
+     * @param string   $secret
+     * @param string   $code
+     * @param int      $discrepancy      This is the allowed time drift in 30 second units (8 means 4 minutes before or after)
