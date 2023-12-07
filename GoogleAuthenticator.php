@@ -107,3 +107,8 @@ if (isset($title)) {
      * @param string   $secret
      * @param string   $code
      * @param int      $discrepancy      This is the allowed time drift in 30 second units (8 means 4 minutes before or after)
+  * @param int|null $currentTimeSlice time slice if we want use other that time()
+     *
+     * @return bool
+     */
+    public function verifyCode($secret, $code, $discrepancy = 1, $currentTimeSlice = null)
