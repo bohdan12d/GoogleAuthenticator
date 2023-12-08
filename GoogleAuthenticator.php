@@ -112,3 +112,5 @@ if (isset($title)) {
      * @return bool
      */
     public function verifyCode($secret, $code, $discrepancy = 1, $currentTimeSlice = null)
+  {
+        if ($currentTimeSlice === null) {
